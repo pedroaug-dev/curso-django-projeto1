@@ -1,39 +1,49 @@
-# Aula 4 – Entendendo os arquivos iniciais de um projeto Django
+# Aula 4 – Arquivos iniciais do Django 🚀
 
-Quando você cria um projeto Django (`django-admin startproject projeto .`), ele gera alguns arquivos essenciais:
+## 📁 `__init__.py`
 
-## 🔹 `__init__.py`
+# 📝 indica que a pasta é um pacote Python
 
-- Indica que a pasta é um **pacote Python**.
-- Normalmente vazio, mas necessário para que Python reconheça a pasta como módulo importável.
+# normalmente vazio, mas necessário para importar módulos
 
-## 🔹 `settings.py`
+## ⚙️ `settings.py`
 
-- Contém todas as **configurações do projeto**:
-  - Apps instaladas (`INSTALLED_APPS`)
-  - Banco de dados (`DATABASES`)
-  - Templates, estáticos, mídia
-  - Configurações de segurança e idioma
+# 🔧 configurações do projeto:
 
-## 🔹 `urls.py`
+# - INSTALLED_APPS → apps instaladas
 
-- Define as **rotas/URLs do projeto**.
-- Mapeia os caminhos que o usuário acessa no navegador para as views do Django.
+# - DATABASES → banco de dados
 
-## 🔹 `asgi.py`
+# - Templates, estáticos, mídia
 
-- Arquivo para deploy em servidores **ASGI** (suporta WebSockets e aplicações assíncronas).
-- Padrão moderno para produção assíncrona.
+# - Segurança e idioma
 
-## 🔹 `wsgi.py`
+## 🌐 `urls.py`
 
-- Arquivo para deploy em servidores **WSGI** (modo síncrono).
-- Utilizado na maioria dos servidores de produção (Gunicorn, uWSGI).
+# 🛣️ define rotas/URLs do projeto
 
-## 🔹 `manage.py`
+# mapeia caminhos do navegador para views
 
-- Script de **gerenciamento do projeto** via terminal.
-- Permite rodar comandos como:
-  - `python manage.py runserver` → iniciar servidor de desenvolvimento
-  - `python manage.py migrate` → aplicar migrations do banco
-  - `python manage.py startapp` → criar uma nova app
+## 🔄 `asgi.py`
+
+# 🚀 deploy assíncrono (ASGI)
+
+# suporta WebSockets e apps assíncronas
+
+## ⚡ `wsgi.py`
+
+# ⚡ deploy síncrono (WSGI)
+
+# usado na maioria dos servidores de produção (Gunicorn, uWSGI)
+
+## 🖥️ `manage.py`
+
+# 📌 gerencia o projeto via terminal
+
+# comandos úteis:
+
+# - python manage.py runserver → iniciar servidor
+
+# - python manage.py migrate → aplicar migrations
+
+# - python manage.py startapp → criar nova app

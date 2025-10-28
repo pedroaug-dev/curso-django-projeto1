@@ -1,17 +1,15 @@
-````markdown
 # Aula 06 – Introdução às URLs e Views no Django
 
 ## 🧠 O que são **URLs** e **Views** no Django?
 
 - **URLs**: definem os caminhos (endereços) que o seu site irá responder.
-  Exemplo: `http://127.0.0.1:8000/sobre/`
-  → Aqui, `/sobre/` é uma URL mapeada dentro do projeto Django.
+  Exemplo: `http://127.0.0.1:8000/sobre/` → `/sobre/` é uma URL mapeada dentro do projeto Django.
 
-- **Views**: são funções (ou classes) que processam as requisições feitas a uma URL e retornam uma resposta (como texto, HTML, JSON etc).
+- **Views**: funções (ou classes) que processam as requisições feitas a uma URL e retornam uma resposta (texto, HTML, JSON etc).
 
 ---
 
-## 💻 Exemplo de código
+## 💻 Exemplo de código (Python)
 
 ```python
 from django.contrib import admin
@@ -28,46 +26,21 @@ urlpatterns = [
     path("sobre/", my_view),          # URL personalizada que chama a função my_view
 ]
 ```
-````
 
----
+## 💡 Explicação rápida
 
-## 🧩 Explicação
+# admin → painel administrativo
 
-`from django.contrib import admin`
-Importa o módulo do painel administrativo do Django.
+# HttpResponse → cria resposta HTTP
 
-`from django.http import HttpResponse`
-Permite criar uma resposta HTTP simples (texto, HTML, etc).
+# path → mapeia URL para view
 
-`from django.urls import path`
-Função usada para mapear URLs a views.
+# my_view(request) → função chamada ao acessar a URL
 
-`def my_view(request):`
-Define uma função que será executada quando alguém acessar a URL associada.
+# urlpatterns → lista de rotas do projeto
 
-`HttpResponse("UMA LINDA STRING")`
-Retorna um texto simples na página
+## 🚀 Testando
 
-`urlpatterns`
-Lista onde são definidas todas as rotas (URLs) do projeto.
+# python manage.py runserver → iniciar servidor
 
----
-
-## 🚀 Resultado
-
-Ao rodar o servidor com:
-
-```bash
-python manage.py runserver
-```
-
-E acessar no navegador:
-
-👉 **[http://127.0.0.1:8000/sobre/](http://127.0.0.1:8000/sobre/)**
-
-Você verá na tela:
-
-```bash
-UMA LINDA STRING
-```
+# Acessar http://127.0.0.1:8000/sobre/ → verá "UMA LINDA STRING"
