@@ -1,4 +1,4 @@
-# Aula 08 – Criando, conhecendo e entendendo apps do Django 🏗️
+# Aula 20 – Criando, conhecendo e entendendo apps do Django 🏗️
 
 ## Contexto
 

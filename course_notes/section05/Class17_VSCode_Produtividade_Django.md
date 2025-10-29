@@ -1,4 +1,4 @@
-# Aula 5 – VS Code e produtividade com Django 🚀
+# Aula 17 – VS Code e produtividade com Django 🚀
 
 ## 🖥️ Terminal integrado
 
