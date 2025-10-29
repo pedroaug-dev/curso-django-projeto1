@@ -1,4 +1,4 @@
-# Aula 2 – Git, SSH e GitHub 🚀
+# Aula 11 – Git, SSH e GitHub 🚀
 
 ## 💻 Configurar Git
 

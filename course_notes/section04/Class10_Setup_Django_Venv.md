@@ -1,4 +1,4 @@
-# Aula 1 – Django e Venv 🚀
+# Aula 10 – Django e Venv 🚀
 
 ## 💻 PowerShell
 
