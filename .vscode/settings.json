@@ -76,5 +76,14 @@
   // ======================================
   // 📝 CORREÇÃO ORTOGRÁFICA
   // ======================================
-  "cSpell.enabled": true
+  "cSpell.enabled": true,
+
+  // ======================================
+  // ⚡️ EMMET
+  // ======================================
+  "emmet.includeLanguages": {
+    "html": "html",
+    "django-html": "html"
+  },
+  "emmet.triggerExpansionOnTab": true
 }
